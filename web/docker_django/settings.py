@@ -89,12 +89,12 @@ DATABASES = {
         'NAME': "postgres",
         'USER': "postgres",
         'PASSWORD': "postgres",
-<<<<<<< HEAD
+#<<<<<<< HEAD
         'HOST': "db",
         'PORT': 5432,
-=======
+#=======
         'HOST': "postgres",
->>>>>>> e161aa16f26627ea1f388178422acc6744d52d30
+#>>>>>>> 
     }
 }
 
