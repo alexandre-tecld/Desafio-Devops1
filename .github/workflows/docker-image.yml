@@ -15,5 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: cd  ~/actions-runner/_work/Desafio-Devops1/Desafio-Devops1
+      run: |
+        cd  ~/actions-runner/_work/Desafio-Devops1/Desafio-Devops1
+        docker-compose build
       
