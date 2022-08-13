@@ -15,7 +15,5 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: iniciando a instancia na aws
-      run: sudo docker-compose build && sudo docker-compose up
-    - name: desligando a instancia
-      run: sudo docker-compose down 
+      run: sudo docker-compose build && sudo docker-compose up && sudo docker-compose down
   
