@@ -6,7 +6,7 @@ services:
     container_name: test_deploy_web
     command: /usr/local/bin/gunicorn docker_django.wsgi:application -b 0.0.0.0:8000
     volumes:
-      - ./web:/web/
+      - ./webb:/web/
       - staticfiles:/web/static/
     ports:
       - 80:8000
@@ -21,9 +21,6 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     
-    ports:
-      - 5432:5432
-    
     environment:
       - POSTGRES_DB=postgres
       - POSTGRES_USER=postgres
@@ -35,7 +32,7 @@ services:
     volumes:
       - staticfiles:/web/static/
     ports:
-      - 8000:80
+      - 80:8000
     depends_on:
       - front
 
