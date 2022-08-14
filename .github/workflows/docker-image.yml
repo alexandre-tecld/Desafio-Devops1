@@ -20,8 +20,8 @@ jobs:
     - name: compose up
       run: sudo docker-compose up -d
     - uses: actions/checkout@v3
-    - name: Sleep for 60 seconds
-      run: Start-Sleep -s 60
+    - name: Sleep for 35 seconds
+      run: sleep 35s
     - uses: actions/checkout@v3
     - name: dompose down
       run: sudo docker-compose down  
